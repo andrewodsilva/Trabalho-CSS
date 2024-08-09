@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    overflow-x: hidden;
+    
+}
+
+header, footer {
+    background-color: brown;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: brown;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin: 0;
+}
+
+header nav ul li {
+    margin: 0;
+}
+
+header nav ul li a {
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: 800;
+    display: block;
+}
+
+header nav ul li a:hover {
+    background-color: #444;
+}
+
+div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 20px;
+    background-color: #f4f4f4;
+}
+
+aside {
+    border-right: 2px solid black;
+    text-align: center;
+    width: 10vw;
+    height: 100vh;
+    float: left;
+}
+
+aside h3 {
+    text-align: center;
+    margin-top: 0;
+}
+
+aside ul {
+    padding: 0;
+    list-style: none;
+}
+
+aside ul li {
+    margin-bottom: 10px;
+}
+
+section {
+    display: flex;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    flex-direction: column;
+    margin-left: 20px;
+    
+}
+
+section img {
+    border: 1px solid #ccc;
+    width: 400px;
+    height: 300px;
+}
+
+footer {
+    display: flex;
+    background-color: brown;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 0 0 10px 0;
+}
+a{
+    text-decoration: none;
+}
+footer a {
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer a img {
+    width: 30px;
+    height: 30px;
+}
+
+
+@media (max-width: 1360px) {
+    div {
+        grid-template-columns: 1fr;
+    }
+    aside {
+        width: 100px;
+    }
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        margin-bottom: 10px;
+    }
+}
+
+.titulo {
+    display: flex;
+    margin: 0px 0px 30px 0px;
+    border-bottom: 3px solid black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+    flex-direction: column;
+}
